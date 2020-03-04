@@ -18,4 +18,10 @@ Springboot and Technology stack
 ## 异常的处理和捕获
 #### 自定义异常
 1. 在报错时系统会抛出大量的错误，我们可以自定义异常并以json的形式返回至前台，方便阅读
-    - json中可以包含 访问路径，报错状态吗，返回的数据，时间以及和前端约定的状态码.
+    - json中可以包含 访问路径，报错状态吗，返回的数据，时间以及和前端约定的状态码。
+    - 自定义报错时，一般继承于RunTimeException
+        - 处理Exception时添加data和ErrorCodeEnum
+            - errorCodeEnum中包含code，status，msg
+            
+    
+2. 全局自动捕获异常

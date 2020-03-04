@@ -1,14 +1,10 @@
 package com.medo.properties.controller;
 
-import com.medo.properties.props.LibraryProperties;
-import config.PropertySourceFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.medo.properties.config.PropertySourceFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * @ClassName: DemoController

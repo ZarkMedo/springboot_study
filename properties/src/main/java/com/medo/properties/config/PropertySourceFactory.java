@@ -1,12 +1,10 @@
-package config;
+package com.medo.properties.config;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.io.support.DefaultPropertySourceFactory;
 import org.springframework.core.io.support.EncodedResource;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Properties;
