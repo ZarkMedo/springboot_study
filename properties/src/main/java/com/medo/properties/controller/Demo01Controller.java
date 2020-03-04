@@ -14,13 +14,13 @@ import java.util.List;
  * @Description: TODO
  **/
 @RestController
-public class Demo02Controller {
+public class Demo01Controller {
     // 在使用注入的properties时，就可以像使用一般的bean一样使用
     @Autowired
     private LibraryProperties libraryProperties;
 
-    @GetMapping("/movies01")
-    public List<LibraryProperties.Books> getMovies(){
+    @GetMapping("/movies")
+    public List<LibraryProperties.Books> getMovies() {
         System.out.println(libraryProperties.getMovies());
         List<LibraryProperties.Books> movies = libraryProperties.getMovies();
         return movies;

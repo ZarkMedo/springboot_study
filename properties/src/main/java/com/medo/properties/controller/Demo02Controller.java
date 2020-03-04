@@ -1,7 +1,10 @@
 package com.medo.properties.controller;
 
 import com.medo.properties.props.LibraryProperties;
+import config.PropertySourceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,16 +17,17 @@ import java.util.List;
  * @Description: TODO
  **/
 @RestController
-public class Demo01Controller {
+//@PropertySource("classpath:application-111.properties")
+@PropertySource(value = "classpath:application-111.yml", factory = PropertySourceFactory.class)
+public class Demo02Controller {
     // 在使用注入的properties时，就可以像使用一般的bean一样使用
-    @Autowired
-    private LibraryProperties libraryProperties;
+
+    @Value("${library.msg}")
+    private String msg;
 
     @GetMapping("/movies01")
-    public List<LibraryProperties.Books> getMovies(){
-        System.out.println(libraryProperties.getMovies());
-        List<LibraryProperties.Books> movies = libraryProperties.getMovies();
-        return movies;
+    public String getMovies() {
+        return msg;
     }
 
 }
