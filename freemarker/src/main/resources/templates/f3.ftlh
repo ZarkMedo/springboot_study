@@ -11,13 +11,13 @@
 
 <h1>hello freemarker</h1>
 
+<p>遍历map需要指定keys/values，且遍历的元素无序</p>
 <ul>
-    <#--list为传入的参数名-->
-    <#--元素名_index 为list元素对应的索引-->
-    <#--index-->
-    <#list list as item>
-       <li>${item_index}: ${item}</li>
+    <#--map遍历的形式和list相同-->
+    <#list map?keys as key>
+        <li>${key?counter} ${key}: ${map[key]}</li>
     </#list>
+
 </ul>
 
 </body>

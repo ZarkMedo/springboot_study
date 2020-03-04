@@ -9,16 +9,16 @@
 </head>
 <body>
 
-<h1>hello freemarker</h1>
+<#include "header.ftlh">
 
-<ul>
-    <#--list为传入的参数名-->
-    <#--元素名_index 为list元素对应的索引-->
-    <#--index-->
-    <#list list as item>
-       <li>${item_index}: ${item}</li>
-    </#list>
-</ul>
+
+<div>
+    <#--if判断 可以完成筛选-->
+    <p>content......</p>
+</div>
+
+<#include "footer.ftlh">
+
 
 </body>
 </html>
