@@ -9,6 +9,8 @@
       <list>
         <option value="$PROJECT_DIR$/freemarker/pom.xml" />
         <option value="$PROJECT_DIR$/execption/pom.xml" />
+        <option value="$PROJECT_DIR$/sync/pom.xml" />
+        <option value="$PROJECT_DIR$/properties/pom.xml" />
       </list>
     </option>
   </component>
