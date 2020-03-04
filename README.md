@@ -25,3 +25,4 @@ Springboot and Technology stack
             
     
 2. 全局自动捕获异常
+   - 通过@ControllerAdvice获取通知，再通过@ExceptionHandler对处理异常的方法进行捕获，如果抛出了此类异常则返回相应的响应。
