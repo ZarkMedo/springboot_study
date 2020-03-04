@@ -11,15 +11,14 @@
 
 <h1>hello freemarker</h1>
 
-<li>
+<ul>
     <#--list为传入的参数名-->
     <#--元素名_index 为list元素对应的索引-->
     <#--index-->
     <#list list as item>
-       <ul>${item_index}: ${item}</ul>
-        <#--<ul>${item?counter}</ul>-->
+        <li>${item_index}: ${item}</li>
     </#list>
-</li>
+</ul>
 
 </body>
 </html>

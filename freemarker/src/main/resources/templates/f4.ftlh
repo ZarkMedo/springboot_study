@@ -14,13 +14,13 @@
 <li>
     <#--if判断 可以完成筛选-->
     <#list list as item>
-       <#--<ul>${item_index}: ${item}</ul>-->
+    <#--<ul>${item_index}: ${item}</ul>-->
         <#if item?is_odd_item>
             <ul>${item?is_odd_item?c}: ${item?counter}</ul>
-            <#--同样 if中包含 elseif和else 用法和java相同-->
-            <#elseif item?is_even_item>
-                <ul>${item?is_odd_item?c}: ${item?counter}</ul>
-            <#else>
+        <#--同样 if中包含 elseif和else 用法和java相同-->
+        <#elseif item?is_even_item>
+            <ul>${item?is_odd_item?c}: ${item?counter}</ul>
+        <#else>
             <ul>${item?is_odd_item?c}: ${item?counter}</ul>
         </#if>
     </#list>

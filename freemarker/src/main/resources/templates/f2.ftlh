@@ -16,7 +16,7 @@
     <#--元素名_index 为list元素对应的索引-->
     <#--index-->
     <#list list as item>
-       <li>${item_index}: ${item}</li>
+        <li>${item_index}: ${item}</li>
     </#list>
 </ul>
 

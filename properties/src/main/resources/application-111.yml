@@ -1,0 +1,9 @@
+
+library:
+    name: medo
+    msg: go to fight
+    movies:
+      - name: 出租车司机
+        description: 觉醒
+      - name: 红岩
+        description: what?
